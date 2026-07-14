@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Detector AI 😂</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+
+        <div id="particles"></div>
+    </div>
+
+    <!-- Main Card -->
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+
+        <div class="glass-card animate__animated animate__fadeIn">
+
+            <!-- Header -->
+            <div class="text-center mb-4">
+
+                <div class="robot">
+
+                    🤖
+
+                </div>
+
+                <h1 class="title">
+                    Height Detector AI
+                </h1>
+
+                <p class="subtitle">
+                    Powered by Totally Accurate Artificial Intelligence
+                </p>
+
+            </div>
+
+            <!-- Progress -->
+
+            <div class="mb-4">
+
+                <div class="d-flex justify-content-between">
+
+                    <small>Truth Detection</small>
+
+                    <small id="progressText">0%</small>
+
+                </div>
+
+                <div class="progress">
+
+                    <div
+                        id="progressBar"
+                        class="progress-bar bg-success"
+                        style="width:0%;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Chat Box -->
+
+            <div class="chat-container shadow">
+
+                <div class="chat-header">
+
+                    <i class="bi bi-robot"></i>
+
+                    Height Bot
+
+                    <span class="status">
+
+                        ● Online
+
+                    </span>
+
+                </div>
+
+                <div id="chatMessages" class="chat-body">
+
+                    <div class="bot-message">
+
+                        <span class="bot-icon">
+
+                            🤖
+
+                        </span>
+
+                        <span class="typing" id="typingMessage">
+
+                            Hello Human...
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="stats mt-3">
+
+                <div class="row text-center">
+
+                    <div class="col">
+
+                        <h5 id="attempts">
+
+                            0
+
+                        </h5>
+
+                        <small>No Attempts</small>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h5 id="lies">
+
+                            0%
+
+                        </h5>
+
+                        <small>Suspicion</small>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h5 id="honesty">
+
+                            Unknown
+
+                        </h5>
+
+                        <small>Status</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="buttons mt-5 text-center">
+
+                <button
+                    id="yesBtn"
+                    class="btn btn-success btn-lg px-5 me-3">
+
+                    <i class="bi bi-check-circle-fill"></i>
+
+                    Yes
+
+                </button>
+
+                <button
+                    id="noBtn"
+                    class="btn btn-danger btn-lg px-5">
+
+                    <i class="bi bi-x-circle-fill"></i>
+
+                    No
+
+                </button>
+
+            </div>
+
+            <!-- Achievement -->
+
+            <div id="achievement" class="achievement">
+
+                🏆 Achievement Unlocked!
+
+                <br>
+
+                <strong>
+
+                    Accepted Reality
+
+                </strong>
+
+            </div>
+
+            <!-- Result -->
+
+            <div id="result" class="result-box mt-4">
+
+                <h2>
+
+                    😂 Height Analysis Complete
+
+                </h2>
+
+                <p>
+
+                    Congratulations!
+
+                </p>
+
+                <h3>
+
+                    Honesty Level:
+                    <span>
+
+                        100%
+
+                    </span>
+
+                </h3>
+
+                <button
+                    id="restartBtn"
+                    class="btn btn-outline-light mt-3">
+
+                    Ask Again
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+            Made by Requiem for You Shorty
+
+    </footer>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
